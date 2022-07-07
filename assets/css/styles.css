@@ -338,13 +338,13 @@ body {
     height          : 50px;
     background-color: rgb(130, 130, 173);
     border-radius   : 50px;
-    text-decoration: none;
-    color          : #fff;
+    text-decoration : none;
+    color           : #fff;
 
-} 
+}
 
 .btn-rede-social:hover {
-    transform: scale(1.1);
+    transform     : scale(1.1);
     transition    : ease-in-out 0.3s;
     letter-spacing: 5px;
 }
@@ -355,13 +355,12 @@ body {
 }
 
 .card-foto {
-    width               : 400px;
-    height              : 500px;
-    background-image    : url('../imagens/perfil.png');
-    /* background-repeat: no-repeat; */
-    background-size     : cover;
-    border-radius       : 20px;
-    box-shadow          : 0.5px 0.5px 10px black;
+    width            : 400px;
+    height           : 500px;
+    background-repeat: no-repeat;
+    background-size  : cover;
+    border-radius    : 20px;
+    box-shadow       : 0.5px 0.5px 10px black;
 }
 
 .card-descricao {
@@ -427,10 +426,15 @@ body {
 
 .card:hover .card-foto {
     filter   : blur(3px);
-    transform: scale(1.08);
+    transform: scale(1.04);
 }
 
 .card:hover .card-descricao {
-    transform: scale(1.08);
+    transform: scale(1.04);
     display  : inline;
+}
+
+.card-rodape {
+    font-size: 20px;
+    font-weight: 600;
 }
