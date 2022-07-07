@@ -41,12 +41,12 @@
                             <span class="text">Sobre mim</span>
                         </a>
                     </li>
-                    <li class="list">
+                    <li class="list" onclick="scrollAncora('#section_cursos')">
                         <a href="#">
                             <span class="icon">
-                                <ion-icon name="chatbubble-outline"></ion-icon>
+                                <ion-icon name="school-outline"></ion-icon>
                             </span>
-                            <span class="text">Portifólio</span>
+                            <span class="text">Cursos</span>
                         </a>
                     </li>
                     <li class="list">
@@ -81,9 +81,8 @@
         </h1>
     </section>
 
-    <section id="section_about_me" name="section_about_me" class="section_about_me">
-        <h2 class="display-flex justify-content-center pt-2 mb-2">Sobre mim</h2>
-
+    <section id="section_about_me" name="section_about_me" class="section">
+        <h2 class="display-flex justify-content-center pt-2 mb-1 section-titulo">Sobre mim</h2>
         <div class="display-flex flex-row flex-wrap justify-content-around align-items-center ">
             <div class="display-flex flex-column card mb-3">
                 <div>
@@ -91,28 +90,18 @@
                 </div>
                 <div class="card-descricao">
                     <p>
-                        Olá, me chamo Mateus Silva Camacho, sou um apaixonado pela vida e amo viver novas experiências,
-                        acredito que na vida tudo oque temos é a experiência do que ja vivemos
+                        Olá, me chamo Mateus Silva Camacho, tenho 24 anos , sou Paulistano e sou um admirador da
+                        técnologia.
                     </p>
                     <p>
-                        Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
-                        texto texto texto texto texto texto texto texto texto texto texto texto
+                        Meu primeiro contato com a programação foi em 2018, quando ingressei na faculdade de Sistemas de
+                        Informação. Apesar de ter gostado das aulas que envolviam programação, não segui com os estudos
+                        nesta área. O interesse pelo desenvolvimento se deu mesmo a partir do segundo semestre de 2020,
+                        aonde tive que desenvolver um portal web para apoiar metodologias ageis, que se tratava do tema
+                        do TCC que apresentei.
                     </p>
                     <p>
-                        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
-                        texto texto texto texto texto texto texto texto texto texto texto texto
-                    </p>
-                    <p>
-                        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
-                        texto texto texto texto texto texto texto texto texto texto texto texto
-                    </p>
-                    <p>
-                        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
-                        texto texto texto texto texto texto texto texto texto texto texto texto
-                    </p>
-                    <p>
-                        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
-                        texto texto texto texto texto texto texto texto texto texto texto texto
+                        Hoje conheço algumas técnologias e atuo como desenvolvedor front-end para aplicações web.
                     </p>
                 </div>
                 <div class="card-rodape display-flex align-items-center justify-content-center">
@@ -122,32 +111,44 @@
             </div>
             <div class="display-flex flex-column card mb-3">
                 <div>
+                    <img class="card-foto" src="assets/imagens/faculdade.png" alt="">
+                </div>
+                <div class="card-descricao">
+                    <p>
+                        Sou formado em Bacharel em Sistemas de Informação pela UNIP - Universidade Paulista.
+                        Concluido em Julho de 2021.
+                    </p>
+                    <p>
+                        Voltado para o desenvolvimento e manutenção de sistemas de informação voltados à administração
+                        dos dados
+                        organizacionais, capturando, armazenando e tratando-os segundo os critérios estabelecidos pelos
+                        processos vigentes na organização, como ferramenta de apoio às áreas operacional, tática e
+                        estratégica.
+                    </p>
+                </div>
+                <div class="card-rodape display-flex align-items-center justify-content-center">
+                    Formação
+                </div>
+                <hr>
+            </div>
+            <div class="display-flex flex-column card mb-3">
+                <div>
                     <img class="card-foto" src="assets/imagens/hobbies.jpg" alt="">
                 </div>
                 <div class="card-descricao">
                     <p>
-                        Olá, me chamo Mateus Silva Camacho, sou um apaixonado pela vida e amo viver novas experiências,
-                        acredito que na vida tudo oque temos é a experiência do que ja vivemos
+                        Nas horas vagas gosto muito de estar com a minha familia e amigos. Passando um tempo de
+                        qualidade com quem gosto.
                     </p>
                     <p>
-                        Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
-                        texto texto texto texto texto texto texto texto texto texto texto texto
+                        Viajar, conhecer novos lugares, novas gastronomias e culturas é sempre uma excelente opção.
                     </p>
                     <p>
-                        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
-                        texto texto texto texto texto texto texto texto texto texto texto texto
+                        Academia também é uma parte dos meus hobbies, é o momento aonde esqueco os problemas do
+                        dia-a-dia e meu foco é no esforço e cansaço fisico.
                     </p>
                     <p>
-                        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
-                        texto texto texto texto texto texto texto texto texto texto texto texto
-                    </p>
-                    <p>
-                        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
-                        texto texto texto texto texto texto texto texto texto texto texto texto
-                    </p>
-                    <p>
-                        texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
-                        texto texto texto texto texto texto texto texto texto texto texto texto
+                        Além disso gosto muito de assistir filmes, ler e escutar músicas.
                     </p>
                 </div>
                 <div class="card-rodape display-flex align-items-center justify-content-center">
@@ -155,9 +156,69 @@
                 </div>
                 <hr>
             </div>
-
         </div>
     </section>
+    <section id="section_cursos" name="section_cursos" class="section2">
+        <h2 class="display-flex justify-content-center pt-2 section-titulo">Cursos Extra</h2>
+
+        <div class="display-flex flex-row flex-wrap justify-content-around align-items-center vem-esquerda pt-2 ">
+           
+            <div class="display-flex flex-column card-cursos mb-3">
+                <div>
+                    <img class="card-cursos-foto" src="assets/imagens/curso1.png" alt="">
+                </div>
+               
+                <div class="card-rodape display-flex align-items-center justify-content-center">
+                    UDEMY - Web moderno
+                </div>
+                <hr>
+            </div>
+            <div class="display-flex flex-column card-cursos mb-3">
+                <div>
+                    <img class="card-cursos-foto" src="assets/imagens/curso2.png" alt="">
+                </div>
+               
+                <div class="card-rodape display-flex align-items-center justify-content-center">
+                    UDEMY - SQL Básico
+                </div>
+                <hr>
+            </div>
+            <div class="display-flex flex-column card-cursos mb-3">
+                <div>
+                    <img class="card-cursos-foto" src="assets/imagens/curso3.png" alt="">
+                </div>
+               
+                <div class="card-rodape display-flex align-items-center justify-content-center">
+                    UDEMY - PHP 7 + Web
+                </div>
+                <hr>
+            </div>
+            <div class="display-flex flex-column card-cursos mb-3">
+                <div>
+                    <img class="card-cursos-foto" src="assets/imagens/curso4.png" alt="">
+                </div>
+               
+                <div class="card-rodape display-flex align-items-center justify-content-center">
+                    UDEMY - Angular 12
+                </div>
+                <hr>
+            </div>
+            <div class="display-flex flex-column card-cursos mb-3">
+                <div>
+                    <img class="card-cursos-foto" src="assets/imagens/curso5.png" alt="">
+                </div>
+               
+                <div class="card-rodape display-flex align-items-center justify-content-center">
+                    DIO - Sintaxe Básica em
+                </div>
+                <hr>
+            </div>
+
+        </div>
+
+    </section>
+
+
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
