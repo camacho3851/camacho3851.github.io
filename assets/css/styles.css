@@ -356,7 +356,7 @@ body {
 }
 
 .section2 {
-    background-color: rgb(170, 188, 212);
+    background-color: rgb(190, 204, 223);
     width           : 100%;
 }
 
@@ -419,9 +419,8 @@ body {
 .card-rodape {
     font-size  : 20px;
     font-weight: 600;
-    margin-top : 0.8rem;
+    margin-top : 1.5rem;
 }
-
 
 .card-cursos-foto {
     width            : 400px;
@@ -434,7 +433,6 @@ body {
 
 
 .card-cursos:hover .card-cursos-foto {
-    /* filter   : blur(10px); */
-    transform: scale(1.1);
+    transform: scale(1.17);
     box-shadow       : 0px 0px 10px black;
 }
