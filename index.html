@@ -402,12 +402,12 @@
 
     </section>
 
-    <footer class="footer display-flex flex-row flex-wrap">
-        <div class="display-flex flex-column justify-content-around align-items-center container-fluid"
-            style="color: white">
-            <span class="footer-titulo">Portfólio Mateus Camacho</span>
+    <footer class="footer display-flex flex-wrap align-items-center justify-content-around">
+        <div class="display-flex flex-column justify-content-around align-items-center vem-esquerda"
+            style="color: #fff">
+            <span class="footer-titulo display-flex align-items-center">Portfólio Mateus Camacho</span>
             <div class="display-flex flex-column justify-content-center align-items-center">
-                Medias sociais
+                Medias sociais / Contato
                 <div class="medias-sociais display-flex flex-row flex-wrap align-items-center justify-content-around">
                     <a href="https://www.linkedin.com/in/mateus-camacho-8a2b71183/" target="_blank">
                         <ion-icon name="logo-linkedin"></ion-icon>
@@ -415,20 +415,65 @@
                     <a href="https://github.com/mateuscamaccho" target="_blank">
                         <ion-icon name="logo-github"></ion-icon>
                     </a>
-                    <a href="https://api.whatsapp.com/send?phone=5511970133902&text=Ol%C3%A1%2C%20vim%20pelo%20seu%20portf%C3%B3lio%20web%20e%20gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho!" target="_blank">
+                    <a href="https://api.whatsapp.com/send?phone=5511970133902&text=Ol%C3%A1%2C%20vim%20pelo%20seu%20portf%C3%B3lio%20web%20e%20gostaria%20de%20saber%20mais%20sobre%20seu%20trabalho!"
+                        target="_blank">
                         <ion-icon name="logo-whatsapp"></ion-icon>
                     </a>
                     <a href="https://www.instagram.com/camachoo_m/" target="_blank">
                         <ion-icon name="logo-instagram"></ion-icon>
                     </a>
                 </div>
-                <div>
-                    Email: MATEUS.SCAMACHO@GMAIL.COM
-                </div>
             </div>
-            <span>Desenvolvido por Mateus Camacho - <i>Todos os direitos reservados.</i></span>
         </div>
 
+        <div class="nav-footer vem-direita">
+            <span class="footer-titulo">Menu</span>
+            <ul>
+                <li class="list" onclick="scrollAncora('#section_home')">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="text">Início</span>
+                    </a>
+                </li>
+                <li class="list" onclick="scrollAncora('#section_about_me')">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="text">Sobre mim</span>
+                    </a>
+                </li>
+                <li class="list" onclick="scrollAncora('#subsection_habilidades')">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="layers-outline"></ion-icon>
+                        </span>
+                        <span class="text">Habilidades</span>
+                    </a>
+                </li>
+                <li class="list" onclick="scrollAncora('#section_cursos')">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="school-outline"></ion-icon>
+                        </span>
+                        <span class="text">Cursos</span>
+                    </a>
+                </li>
+                <li class="list" onclick="scrollAncora('footer')">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="mail-unread-outline"></ion-icon>
+                        </span>
+                        <span class="text">Contato</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <footer class="footer2 display-flex flex-row align-items-center justify-content-center">
+        <span class="vem-baixo">Desenvolvido por Mateus Camacho - <i>Todos os direitos reservados.</i></span>
     </footer>
 
 
