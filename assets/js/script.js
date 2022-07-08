@@ -23,7 +23,6 @@ setTimeout(() => {
 window.sr = ScrollReveal({ reset: true });
 ScrollReveal({ distance: '30px' });
 sr.reveal('.slogan', { duration: 3000, origin: 'left' })
-sr.reveal('.card', { duration: 3000, origin: 'right' })
 sr.reveal('.section-titulo', { duration: 3000, origin: 'bottom' })
 sr.reveal('.vem-esquerda', { duration: 3000, origin: 'left' })
 sr.reveal('.vem-direita', { duration: 3000, origin: 'right' })
