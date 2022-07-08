@@ -22,7 +22,7 @@
     <nav class="navbar">
         <div class="container-fluid">
             <a href="#" class="navbar-brand" onclick="scrollAncora('#section_home')">
-                <img src="assets/imagens/Logo.png" alt="MC">
+                <img alt="Logo" src="assets/imagens/Logo.png" alt="MC">
             </a>
 
             <div class="navigation">
@@ -96,7 +96,7 @@
         <div class="display-flex flex-row flex-wrap justify-content-around align-items-center ">
             <div class="display-flex flex-column card vem-esquerda mb-3 ">
                 <div>
-                    <img class="card-foto" src="assets/imagens/perfil.png" alt="">
+                    <img alt="foto de perfil" class="card-foto" src="assets/imagens/perfil.png" alt="">
                 </div>
                 <div class="card-descricao">
                     <p>
@@ -121,7 +121,7 @@
             </div>
             <div class="display-flex flex-column card vem-esquerda mb-3">
                 <div>
-                    <img class="card-foto" src="assets/imagens/faculdade.png" alt="">
+                    <img alt="faculdade" class="card-foto" src="assets/imagens/faculdade.png" alt="">
                 </div>
                 <div class="card-descricao">
                     <p>
@@ -143,7 +143,7 @@
             </div>
             <div class="display-flex flex-column card vem-esquerda mb-3">
                 <div>
-                    <img class="card-foto" src="assets/imagens/hobbies.jpg" alt="">
+                    <img alt="hobbies" class="card-foto" src="assets/imagens/hobbies.jpg" alt="">
                 </div>
                 <div class="card-descricao">
                     <p>
@@ -349,7 +349,7 @@
 
             <div class="display-flex flex-column card-cursos vem-esquerda mb-3">
                 <div>
-                    <img class="card-cursos-foto" src="assets/imagens/curso1.png" alt="">
+                    <img alt="curso" class="card-cursos-foto" src="assets/imagens/curso1.png" alt="">
                 </div>
 
                 <div class="card-rodape display-flex align-items-center justify-content-center">
@@ -359,7 +359,7 @@
             </div>
             <div class="display-flex flex-column card-cursos vem-esquerda mb-3">
                 <div>
-                    <img class="card-cursos-foto" src="assets/imagens/curso2.png" alt="">
+                    <img alt="curso" class="card-cursos-foto" src="assets/imagens/curso2.png" alt="">
                 </div>
 
                 <div class="card-rodape display-flex align-items-center justify-content-center">
@@ -369,7 +369,7 @@
             </div>
             <div class="display-flex flex-column card-cursos vem-esquerda mb-3">
                 <div>
-                    <img class="card-cursos-foto" src="assets/imagens/curso3.png" alt="">
+                    <img alt="curso" class="card-cursos-foto" src="assets/imagens/curso3.png" alt="">
                 </div>
 
                 <div class="card-rodape display-flex align-items-center justify-content-center">
@@ -379,7 +379,7 @@
             </div>
             <div class="display-flex flex-column card-cursos vem-esquerda mb-3">
                 <div>
-                    <img class="card-cursos-foto" src="assets/imagens/curso4.png" alt="">
+                    <img alt="curso" class="card-cursos-foto" src="assets/imagens/curso4.png" alt="">
                 </div>
 
                 <div class="card-rodape display-flex align-items-center justify-content-center">
@@ -389,7 +389,7 @@
             </div>
             <div class="display-flex flex-column card-cursos vem-esquerda mb-3">
                 <div>
-                    <img class="card-cursos-foto" src="assets/imagens/curso5.png" alt="">
+                    <img alt="curso" class="card-cursos-foto" src="assets/imagens/curso5.png" alt="">
                 </div>
 
                 <div class="card-rodape display-flex align-items-center justify-content-center">
@@ -512,6 +512,17 @@
             }, 1000);
             return false;
         });
+
+        $(document).ready(() => {
+            $.ajax({
+                type: "POST",
+                dataType: "JSON",
+                url: 'https://www.google.com/ping?sitemap=assets/sitemap/sitemap.xml',
+                success: function (x) {
+                   console.log(x)
+                }
+            })
+        })
 
 
     </script>
