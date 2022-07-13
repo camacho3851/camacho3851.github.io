@@ -65,6 +65,26 @@
     flex-wrap: nowrap;
 }
 
+.gap-1 {
+    gap: 1em;
+}
+
+.gap-2 {
+    gap: 2em;
+}
+
+.gap-3 {
+    gap: 3em;
+}
+
+.gap-4 {
+    gap: 4em;
+}
+
+.gap-5 {
+    gap: 5em;
+}
+
 .mb-1 {
     margin-bottom: 1rem;
 }
@@ -447,6 +467,59 @@ body {
         transform: scale(1.2);
     }
 }
+
+
+.card-projeto {
+    background-color: #dce1f1;
+    height          : 195px;
+    width           : 310px;
+    border-radius   : 20px;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    cursor          : pointer;
+    overflow        : hidden;
+}
+
+.card-projeto div {
+    background-color: #7083a7;
+    width           : 1000px;
+    text-align      : center;
+    padding         : 5% 0;
+    transform       : rotate(-50deg);
+}
+
+.card-projeto div p {
+    font-family: 'Fira Sans', sans-serif;
+    font-size  : 20px;
+    color      : #fff;
+    font-weight: 700;
+}
+
+.card-projeto:hover div p {
+    letter-spacing: 4px;
+    transition    : ease-in-out 0.3s;
+}
+
+.btn-vermais {
+    width           : 300px;
+    height          : 50px;
+    background-color: rgb(130, 130, 173);
+    border-radius   : 50px;
+    text-decoration : none;
+    color           : #fff;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn-vermais:hover {
+    transform     : scale(1.1);
+    transition    : ease-in-out 0.3s;
+    letter-spacing: 5px;
+}
+
 
 .footer {
     background-color: rgba(1, 46, 62, 1);

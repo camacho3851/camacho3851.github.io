@@ -59,6 +59,14 @@
                             <span class="text">Cursos</span>
                         </a>
                     </li>
+                    <li class="list" onclick="scrollAncora('#section_projetos')">
+                        <a href="#">
+                            <span class="icon">
+                                <ion-icon name="albums-outline"></ion-icon>
+                            </span>
+                            <span class="text">Projetos</span>
+                        </a>
+                    </li>
                     <li class="list" onclick="scrollAncora('footer')">
                         <a href="#">
                             <span class="icon">
@@ -402,6 +410,67 @@
 
     </section>
 
+    <section id="section_projetos" class="section mb-2">
+        <h2 class="display-flex justify-content-center pt-2 section-titulo">Projetos</h2>
+
+        <div class="display-flex flex-row flex-wrap justify-content-center gap-3 align-items-center pt-2">
+            
+            <div class="card-projeto">
+                <div>
+                    <p>EM BREVE</p>
+                </div>
+            </div>
+            <div class="card-projeto">
+                <div>
+                    <p>EM BREVE</p>
+                </div>
+            </div>
+            <div class="card-projeto">
+                <div>
+                    <p>EM BREVE</p>
+                </div>
+            </div>
+            <div class="card-projeto">
+                <div>
+                    <p>EM BREVE</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="mais-cursos" class="display-flex flex-row flex-wrap justify-content-center gap-3 align-items-center pt-2" style="display: none;">
+            
+            <div class="card-projeto">
+                <div>
+                    <p>EM BREVE</p>
+                </div>
+            </div>
+            <div class="card-projeto">
+                <div>
+                    <p>EM BREVE</p>
+                </div>
+            </div>
+            <div class="card-projeto">
+                <div>
+                    <p>EM BREVE</p>
+                </div>
+            </div>
+            <div class="card-projeto">
+                <div>
+                    <p>EM BREVE</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="vermais" class="display-flex aling-items-center justify-content-center pt-2">
+            <button class="btn-vermais">VER MAIS </button>
+        </div>
+        <div id="vermenos" class="display-flex aling-items-center justify-content-center pt-2" style="display: none;">
+            <button class="btn-vermais">VER MENOS </button>
+        </div>
+    </section>
+
     <footer class="footer display-flex flex-wrap align-items-center justify-content-around container-fluid">
         <div class="display-flex flex-column justify-content-around align-items-center vem-esquerda"
             style="color: #fff">
@@ -490,7 +559,7 @@
             $('html, body').stop().animate({ scrollTop: posicao - 80 }, 1600)
 
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                $('html, body').stop().animate({ scrollTop: posicao - 130 }, 1600)
+                $('html, body').stop().animate({ scrollTop: posicao - 150 }, 1600)
             } else {
                 $('html, body').stop().animate({ scrollTop: posicao - 80 }, 1600)
             }
@@ -512,6 +581,22 @@
             }, 1000);
             return false;
         });
+
+        $(document).ready(() => {
+            
+            $("#vermais").on("click", () => {
+                $("#mais-cursos").fadeIn()
+                $("#vermenos").show()
+                $("#vermais").hide()
+            })
+
+            $("#vermenos").on("click", () => {
+                $("#mais-cursos").fadeOut()
+                $("#vermenos").hide()
+                $("#vermais").show()
+            })
+        })
+
     </script>
 
 
