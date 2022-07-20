@@ -27,8 +27,8 @@
 
             <div class="navigation">
                 <ul>
-                    <li class="list" onclick="scrollAncora('#section_home')">
-                        <a href="#">
+                    <li class="list active" onclick="scrollAncora('#section_home')">
+                        <a href="#section_home">
                             <span class="icon">
                                 <ion-icon name="home-outline"></ion-icon>
                             </span>
@@ -36,23 +36,16 @@
                         </a>
                     </li>
                     <li class="list" onclick="scrollAncora('#section_about_me')">
-                        <a href="#">
+                        <a href="#section_about_me">
                             <span class="icon">
                                 <ion-icon name="person-outline"></ion-icon>
                             </span>
                             <span class="text">Sobre mim</span>
                         </a>
                     </li>
-                    <li class="list" onclick="scrollAncora('#subsection_habilidades')">
-                        <a href="#">
-                            <span class="icon">
-                                <ion-icon name="layers-outline"></ion-icon>
-                            </span>
-                            <span class="text">Habilidades</span>
-                        </a>
-                    </li>
+                    
                     <li class="list" onclick="scrollAncora('#section_cursos')">
-                        <a href="#">
+                        <a href="#section_cursos">
                             <span class="icon">
                                 <ion-icon name="school-outline"></ion-icon>
                             </span>
@@ -60,7 +53,7 @@
                         </a>
                     </li>
                     <li class="list" onclick="scrollAncora('#section_projetos')">
-                        <a href="#">
+                        <a href="#section_projetos">
                             <span class="icon">
                                 <ion-icon name="albums-outline"></ion-icon>
                             </span>
@@ -68,7 +61,7 @@
                         </a>
                     </li>
                     <li class="list" onclick="scrollAncora('footer')">
-                        <a href="#">
+                        <a href="#section_projetos">
                             <span class="icon">
                                 <ion-icon name="mail-unread-outline"></ion-icon>
                             </span>
@@ -80,8 +73,8 @@
         </div>
     </nav>
 
-    <section id="section_home" class="section_home">
-        <h1 class="slogan">
+    <section id="section_home" class="section_home container-fluid page-section">
+        <div class="slogan">
             Oii, eu sou <br>
             <span class="typewriter">
                 <span id="text"> Mateus Camacho...</span>
@@ -96,10 +89,10 @@
                 href="https://github.com/mateuscamaccho" target="_blank">
                 GitHub
             </a>
-        </h1>
+        </div>
     </section>
 
-    <section id="section_about_me" class="section container-fluid">
+    <section id="section_about_me" class="section container-fluid page-section">
         <h2 class="display-flex justify-content-center pt-2 mb-1 section-titulo">Sobre mim</h2>
         <div class="display-flex flex-row flex-wrap justify-content-around align-items-center ">
             <div class="display-flex flex-column card vem-esquerda mb-3 ">
@@ -179,8 +172,13 @@
         <h2 id="subsection_habilidades" class="display-flex justify-content-center pt-2 section-titulo mb-2">Habilidades
         </h2>
 
-        <div class="display-flex flex-row flex-wrap align-items-center justify-content-around mb-3">
-            <div class="display-flex flex-column vem-direita">
+        <div class="display-flex flex-row flex-wrap align-items-center justify-content-center gap-3 mb-3">
+
+            <div class="display-flex align-items-center flex-column vem-direita card-habilidade">
+                <div class="circle-rodape display-flex align-items-center justify-content-center">
+                    <ion-icon name="logo-html5"></ion-icon>
+                    HTML
+                </div>
                 <div class="progress-circle over50 p80">
                     <span>80%</span>
                     <div class="left-half-clipper">
@@ -188,14 +186,13 @@
                         <div class="value-bar"></div>
                     </div>
                 </div>
-                <div class="circle-rodape display-flex align-items-center justify-content-center">
-                    <ion-icon name="logo-html5"></ion-icon>
-                    HTML
-                </div>
-                <hr>
             </div>
 
-            <div class="display-flex flex-column vem-direita">
+            <div class="display-flex align-items-center flex-column vem-direita">
+                <div class="circle-rodape display-flex align-items-center justify-content-center">
+                    <ion-icon name="logo-css3"></ion-icon>
+                    CSS
+                </div>
                 <div class="progress-circle over50 p70">
                     <span>70%</span>
                     <div class="left-half-clipper">
@@ -203,21 +200,9 @@
                         <div class="value-bar"></div>
                     </div>
                 </div>
-                <div class="circle-rodape display-flex align-items-center justify-content-center">
-                    <ion-icon name="logo-css3"></ion-icon>
-                    CSS
-                </div>
-                <hr>
             </div>
 
-            <div class="display-flex flex-column vem-direita">
-                <div class="progress-circle over50 p60">
-                    <span>75%</span>
-                    <div class="left-half-clipper">
-                        <div class="first50-bar"></div>
-                        <div class="value-bar"></div>
-                    </div>
-                </div>
+            <div class="display-flex align-items-center flex-column vem-direita">
                 <div class="circle-rodape display-flex align-items-center justify-content-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor"
                         viewBox="0 0 16 16">
@@ -228,10 +213,20 @@
                     </svg>
                     Bootstrap
                 </div>
-                <hr>
+                <div class="progress-circle over50 p60">
+                    <span>75%</span>
+                    <div class="left-half-clipper">
+                        <div class="first50-bar"></div>
+                        <div class="value-bar"></div>
+                    </div>
+                </div>
             </div>
 
-            <div class="display-flex flex-column vem-direita">
+            <div class="display-flex align-items-center flex-column vem-direita">
+                <div class="circle-rodape display-flex align-items-center justify-content-center">
+                    <ion-icon name="logo-javascript"></ion-icon>
+                    Javascript
+                </div>
                 <div class="progress-circle p50">
                     <span>50%</span>
                     <div class="left-half-clipper">
@@ -239,21 +234,9 @@
                         <div class="value-bar"></div>
                     </div>
                 </div>
-                <div class="circle-rodape display-flex align-items-center justify-content-center">
-                    <ion-icon name="logo-javascript"></ion-icon>
-                    Javascript
-                </div>
-                <hr>
             </div>
 
-            <div class="display-flex flex-column vem-direita">
-                <div class="progress-circle over50 p60">
-                    <span>60%</span>
-                    <div class="left-half-clipper">
-                        <div class="first50-bar"></div>
-                        <div class="value-bar"></div>
-                    </div>
-                </div>
+            <div class="display-flex align-items-center flex-column vem-direita">
                 <div class="circle-rodape display-flex align-items-center justify-content-center">
                     <svg viewBox="0 0 122.88 121.74" width="25" height="20" fill="#21609B">
 
@@ -266,17 +249,16 @@
                     </svg>
                     Jquery
                 </div>
-                <hr>
-            </div>
-
-            <div class="display-flex flex-column vem-direita">
-                <div class="progress-circle p45">
-                    <span>45%</span>
+                <div class="progress-circle over50 p60">
+                    <span>60%</span>
                     <div class="left-half-clipper">
                         <div class="first50-bar"></div>
                         <div class="value-bar"></div>
                     </div>
                 </div>
+            </div>
+
+            <div class="display-flex align-items-center flex-column vem-direita">
                 <div class="circle-rodape display-flex align-items-center justify-content-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor"
                         class="bi bi-filetype-php" viewBox="0 0 16 16">
@@ -285,10 +267,20 @@
                     </svg>
                     PHP
                 </div>
-                <hr>
+                <div class="progress-circle p45">
+                    <span>45%</span>
+                    <div class="left-half-clipper">
+                        <div class="first50-bar"></div>
+                        <div class="value-bar"></div>
+                    </div>
+                </div>
             </div>
 
-            <div class="display-flex flex-column vem-direita">
+            <div class="display-flex align-items-center flex-column vem-direita">
+                <div class="circle-rodape display-flex align-items-center justify-content-center">
+                    <ion-icon name="logo-nodejs"></ion-icon>
+                    NodeJs (Express)
+                </div>
                 <div class="progress-circle p20">
                     <span>20%</span>
                     <div class="left-half-clipper">
@@ -296,29 +288,13 @@
                         <div class="value-bar"></div>
                     </div>
                 </div>
-                <div class="circle-rodape display-flex align-items-center justify-content-center">
-                    <ion-icon name="logo-nodejs"></ion-icon>
-                    NodeJs (Módulo Express)
-                </div>
-                <hr>
             </div>
 
-            <div class="display-flex flex-column vem-direita">
-                <div class="progress-circle over50 p70">
-                    <span>70%</span>
-                    <div class="left-half-clipper">
-                        <div class="first50-bar"></div>
-                        <div class="value-bar"></div>
-                    </div>
-                </div>
+            <div class="display-flex align-items-center flex-column vem-direita">
                 <div class="circle-rodape display-flex align-items-center justify-content-center">
                     <ion-icon name="git-merge-outline"></ion-icon>
                     GIT
                 </div>
-                <hr>
-            </div>
-
-            <div class="display-flex flex-column vem-direita">
                 <div class="progress-circle over50 p70">
                     <span>70%</span>
                     <div class="left-half-clipper">
@@ -326,14 +302,13 @@
                         <div class="value-bar"></div>
                     </div>
                 </div>
+            </div>
+
+            <div class="display-flex align-items-center  flex-column vem-direita">
                 <div class="circle-rodape display-flex align-items-center justify-content-center">
                     <ion-icon name="logo-gitlab"></ion-icon>
                     GitLab
                 </div>
-                <hr>
-            </div>
-
-            <div class="display-flex flex-column vem-direita">
                 <div class="progress-circle over50 p70">
                     <span>70%</span>
                     <div class="left-half-clipper">
@@ -341,16 +316,25 @@
                         <div class="value-bar"></div>
                     </div>
                 </div>
+            </div>
+
+            <div class="display-flex align-items-center flex-column vem-direita">
                 <div class="circle-rodape display-flex align-items-center justify-content-center">
                     <ion-icon name="logo-github"></ion-icon>
                     GitHub
                 </div>
-                <hr>
+                <div class="progress-circle over50 p70">
+                    <span>70%</span>
+                    <div class="left-half-clipper">
+                        <div class="first50-bar"></div>
+                        <div class="value-bar"></div>
+                    </div>
+                </div>
             </div>
 
         </div>
     </section>
-    <section id="section_cursos" class="section2">
+    <section id="section_cursos" class="section2 page-section">
         <h2 class="display-flex justify-content-center pt-2 section-titulo">Cursos Extras</h2>
 
         <div class="display-flex flex-row flex-wrap justify-content-around align-items-center pt-2 ">
@@ -410,7 +394,7 @@
 
     </section>
 
-    <section id="section_projetos" class="section mb-2">
+    <section id="section_projetos" class="section mb-2 page-section">
         <h2 class="display-flex justify-content-center pt-2 section-titulo">Projetos</h2>
 
         <div class="display-flex flex-row flex-wrap justify-content-center gap-3 align-items-center pt-2">
@@ -465,10 +449,10 @@
 
         </div>
 
-        <div id="vermais" class="display-flex aling-items-center justify-content-center pt-2">
+        <div id="vermais" class="display-flex align-items-center justify-content-center pt-2">
             <button class="btn-vermais">VER MAIS </button>
         </div>
-        <div id="vermenos" class="display-flex aling-items-center justify-content-center pt-2" style="display: none;">
+        <div id="vermenos" class="display-flex align-items-center justify-content-center pt-2" style="display: none;">
             <button class="btn-vermais">VER MENOS </button>
         </div>
     </section>
@@ -497,7 +481,7 @@
             </div>
         </div>
 
-        <div class="nav-footer vem-direita">
+        <div class="nav-footer vem-direita page-section">
             <span class="footer-titulo">Menu</span>
             <ul>
                 <li class="list" onclick="scrollAncora('#section_home')">
@@ -605,7 +589,6 @@
                 $("#vermais").show()
             })
         })
-
     </script>
 
 
