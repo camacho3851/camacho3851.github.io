@@ -57,7 +57,7 @@ $(window).scroll(function () {
     $('.page-section').each(function (i) {
         console.log(distance)
         if ($(this).position().top
-            <= distance + 450) {
+            <= distance + 600) {
 
             $('.navigation li.active')
                 .removeClass('active');
