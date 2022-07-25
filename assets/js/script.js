@@ -55,7 +55,7 @@ link on Scrolling */
 $(window).scroll(function () {
     var distance = $(window).scrollTop();
     $('.page-section').each(function (i) {
-        console.log(distance)
+        // console.log(distance)
         if ($(this).position().top
             <= distance + 600) {
 
