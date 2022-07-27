@@ -27,7 +27,7 @@
 
             <div class="navigation">
                 <ul>
-                    <li class="list active" onclick="scrollAncora('#section_home')">
+                    <li class="list" onclick="scrollAncora('#section_home')">
                         <a href="javascript:void(0)">
                             <span class="icon">
                                 <ion-icon name="home-outline"></ion-icon>
@@ -397,8 +397,14 @@
     <section id="section_projetos" class="section mb-2 page-section">
         <h2 class="display-flex justify-content-center pt-2 section-titulo">Projetos</h2>
 
-        <div class="display-flex flex-row flex-wrap justify-content-center gap-3 align-items-center pt-2">
+        <div class="display-flex flex-row flex-wrap justify-content-center gap-3 align-items-center pt-2 vem-direita">
 
+            <div class="card-projeto ativo">
+                <ion-icon name="qr-code-outline" style="font-size: 7em;"></ion-icon>
+                <a class="card-projeto-descricao" href="https://mgeradorqrcode.herokuapp.com/" target="_blank">
+                    QRCode Generator
+                </a>
+            </div>
             <div class="card-projeto ativo">
                 <img src="assets/imagens/projetos/gps.png" width="100px" alt="" srcset="">
                 <a class="card-projeto-descricao" href="https://mbuscadorcep.herokuapp.com" target="_blank">
@@ -416,16 +422,11 @@
                     <p>EM BREVE</p>
                 </div>
             </div>
-            <div class="card-projeto">
-                <div>
-                    <p>EM BREVE</p>
-                </div>
-            </div>
 
         </div>
 
         <div id="mais-cursos"
-            class="display-flex flex-row flex-wrap justify-content-center gap-3 align-items-center pt-2"
+            class="display-flex flex-row flex-wrap justify-content-center gap-3 align-items-center pt-2 "
             style="display: none;">
 
             <div class="card-projeto">
@@ -460,8 +461,7 @@
     </section>
 
     <footer class="footer display-flex flex-wrap align-items-center justify-content-around container-fluid">
-        <div class="display-flex flex-column justify-content-around align-items-center vem-esquerda"
-            style="color: #fff">
+        <div class="display-flex flex-column justify-content-around align-items-center" style="color: #fff">
             <span class="footer-titulo display-flex align-items-center">Portfólio Mateus Camacho</span>
             <div class="display-flex flex-column justify-content-center align-items-center">
                 Medias sociais / Contato
@@ -483,7 +483,7 @@
             </div>
         </div>
 
-        <div class="nav-footer vem-direita page-section">
+        <div class="nav-footer page-section">
             <span class="footer-titulo">Menu</span>
             <ul>
                 <li class="list" onclick="scrollAncora('#section_home')">
@@ -538,7 +538,7 @@
         </div>
     </footer>
     <footer class="footer2 display-flex flex-row align-items-center justify-content-center container-fluid">
-        <span class="vem-baixo">Desenvolvido por Mateus Camacho - <i>Todos os direitos reservados.</i></span>
+        <span>Desenvolvido por Mateus Camacho - <i>Todos os direitos reservados.</i></span>
     </footer>
 
 
