@@ -507,7 +507,7 @@ html {
     letter-spacing: 5px;
 }
 
-.card-projeto div {
+.card-projeto .faixa {
     background-color: #7083a7;
     width           : 1000px;
     text-align      : center;
@@ -515,18 +515,29 @@ html {
     transform       : rotate(-50deg);
 }
 
-.card-projeto div p {
+.card-projeto .faixa p {
     font-family: 'Fira Sans', sans-serif;
     font-size  : 20px;
     color      : #fff;
     font-weight: 700;
 }
 
-.card-projeto:hover div p {
+.card-projeto:hover .faixa p {
     letter-spacing: 4px;
     transition    : ease-in-out 0.3s;
 }
 
+.img-mario {
+    border-bottom: 45px solid rgb(64, 163, 73);
+    width: 500px;
+    height: 100%;
+}
+
+.img-mario img {
+    position: absolute;
+    padding-top: 15px;
+    margin-left: 70px;
+}
 .btn-vermais {
     width           : 250px;
     height          : 45px;
