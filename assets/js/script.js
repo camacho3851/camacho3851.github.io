@@ -34,36 +34,36 @@ sr.reveal('.vem-baixo', { duration: 3000, origin: 'bottom' })
 
 /* Code for changing active 
     link on clicking */
-var btns =
-    $(".navigation li");
+// var btns =
+//     $(".navigation li");
 
-for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click",
-        function () {
-            var current = document
-                .getElementsByClassName("active");
+// for (var i = 0; i < btns.length; i++) {
+//     btns[i].addEventListener("click",
+//         function () {
+//             var current = document
+//                 .getElementsByClassName("active");
 
-            current[0].className = current[0]
-                .className.replace(" active", "");
+//             current[0].className = current[0]
+//                 .className.replace(" active", "");
 
-            this.className += " active";
-        });
-}
+//             this.className += " active";
+//         });
+// }
 
-/* Code for changing active 
-link on Scrolling */
-$(window).scroll(function () {
-    var distance = $(window).scrollTop();
-    $('.page-section').each(function (i) {
-        // console.log(distance)
-        if ($(this).position().top
-            <= distance + 600) {
+// /* Code for changing active 
+// link on Scrolling */
+// $(window).scroll(function () {
+//     var distance = $(window).scrollTop();
+//     $('.page-section').each(function (i) {
+//         // console.log(distance)
+//         if ($(this).position().top
+//             <= distance + 600) {
 
-            $('.navigation li.active')
-                .removeClass('active');
+//             $('.navigation li.active')
+//                 .removeClass('active');
 
-            $('.navigation li').eq(i)
-                .addClass('active');
-        }
-    });
-}).scroll();
+//             $('.navigation li').eq(i)
+//                 .addClass('active');
+//         }
+//     });
+// }).scroll();
