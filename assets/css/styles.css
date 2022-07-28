@@ -145,7 +145,27 @@
     padding-top: 5rem;
 }
 
+.fs1 {
+    font-size: 1em;
+}
 
+.fs1_5 {
+    font-size: 1.5em;
+}
+
+.fs2 {
+    font-size: 2em;
+}
+
+.fs2_5 {
+    font-size: 2.5em;
+}
+
+.fs3 {
+    font-size: 3em;
+}
+
+/* CSS DA PAÁGINA */
 * {
     margin         : 0;
     padding        : 0;
@@ -313,7 +333,7 @@ html {
 
 .section_home {
     height               : 100vh;
-    background-image  : url('../imagens/bg1.jpg');
+    background-image     : url('../imagens/bg1.jpg');
     background-attachment: fixed;
     background-repeat    : no-repeat;
     background-size      : cover;
@@ -346,7 +366,7 @@ html {
     display      : block;
     z-index      : 10;
     text-align   : center;
-    cursor: pointer;
+    cursor       : pointer;
 }
 
 .scroll-down span {
@@ -364,7 +384,7 @@ html {
     animation-delay                  : 0s;
     animation-iteration-count        : infinite;
     animation-play-state             : running;
-    font-size: 2em;
+    font-size                        : 2em;
 }
 
 @keyframes drop {
@@ -376,9 +396,9 @@ html {
     1% {
         top    : -3px;
         opacity: 1;
-        
+
     }
-    
+
     30% {
         top    : 10px;
         opacity: 1;
@@ -396,7 +416,7 @@ html {
     margin     : 0 auto;
     display    : inline-block;
     font-weight: 800;
-    font-size  : 2em;
+    font-size  : 2.5em;
 }
 
 .typewriter span:after {
