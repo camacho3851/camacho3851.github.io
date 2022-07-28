@@ -90,6 +90,11 @@
                 GitHub
             </a>
         </div>
+        <div class="scroll-down" onclick="scrollAncora('#section_about_me')">
+            <span>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </span>
+        </div>
     </section>
 
     <section id="section_about_me" class="section container-fluid page-section">
@@ -582,6 +587,15 @@
         });
 
         $(document).ready(() => {
+            $('nav').css('display', 'none')
+
+            $(window).scroll(() => {
+                if ($(this).scrollTop() >= ($(".section_home").height() / 4)) {
+                    $('nav').stop().fadeIn();
+                } else {
+                    $('nav').stop().fadeOut();
+                }
+            });
 
             $("#vermais").on("click", () => {
                 $("#mais-cursos").fadeIn()
