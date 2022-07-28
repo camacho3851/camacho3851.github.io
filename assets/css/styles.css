@@ -313,9 +313,7 @@ html {
 
 .section_home {
     height               : 100vh;
-    /* background-image  : url('../imagens/971.png'); */
-    /* background-image  : url('https://img.freepik.com/vetores-gratis/abstrato-azul-classico_23-2148413127.jpg?w=1380&t=st=1659031635~exp=1659032235~hmac=ecd5846df6127a25af8ca0e3a1b9593204119b0ad61b404b42fe6119a017667f'); */
-    background-image     : url('https://img.freepik.com/vetores-gratis/fundo-memphis-em-meio-tom-azul-escuro_1017-33615.jpg?w=1480&t=st=1659032887~exp=1659033487~hmac=ca701982d2d228de7eacec21d9147f8244b311fd9e645bca88cee1fa3983a70c');
+    background-image  : url('../imagens/bg1.jpg');
     background-attachment: fixed;
     background-repeat    : no-repeat;
     background-size      : cover;
