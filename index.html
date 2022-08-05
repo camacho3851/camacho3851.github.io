@@ -19,11 +19,6 @@
         <ion-icon name="arrow-up-circle"></ion-icon>
     </div>
 
-
-    <div class="visitantes">
-        Visitante numero: <span id="visitanteNum"></span>
-    </div>
-
     <nav class="navbar">
         <div class="container-fluid">
             <a href="#" class="navbar-brand" onclick="scrollAncora('#section_home')">
@@ -616,17 +611,6 @@
                 $("#mais-cursos").fadeOut()
                 $("#vermenos").hide()
                 $("#vermais").show()
-            })
-            
-            $.ajax({
-                type: "GET",
-                dataType: "json",
-                url: "teste.php?tipo=incluirVisitante",
-                success: (x) => {
-                    console.log(x.visitante)
-                    $("#visitanteNum").html(x.visitante)
-
-                }
             })
 
         })
