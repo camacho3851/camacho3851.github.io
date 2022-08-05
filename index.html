@@ -19,6 +19,11 @@
         <ion-icon name="arrow-up-circle"></ion-icon>
     </div>
 
+
+    <div class="visitantes">
+        Visitante numero: <span id="visitanteNum"></span>
+    </div>
+
     <nav class="navbar">
         <div class="container-fluid">
             <a href="#" class="navbar-brand" onclick="scrollAncora('#section_home')">
@@ -76,7 +81,7 @@
     <section id="section_home" class="section_home container-fluid page-section">
         <div class="slogan">
             <span class="fs1_5">
-                Oii, eu sou 
+                Oii, eu sou
             </span>
             <span class="typewriter">
                 <span id="text"> Mateus Camacho...</span>
@@ -612,6 +617,18 @@
                 $("#vermenos").hide()
                 $("#vermais").show()
             })
+            
+            $.ajax({
+                type: "GET",
+                dataType: "json",
+                url: "teste.php?tipo=incluirVisitante",
+                success: (x) => {
+                    console.log(x.visitante)
+                    $("#visitanteNum").html(x.visitante)
+
+                }
+            })
+
         })
     </script>
 

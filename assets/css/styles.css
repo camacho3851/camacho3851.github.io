@@ -219,6 +219,34 @@ html {
     margin-left  : auto;
 }
 
+.visitantes {
+    background-color: cornflowerblue;
+    position        : fixed;
+    color           : #ececec;
+    left            : 0;
+    top             : 30%;
+    z-index         : 999;
+    padding         : 30px;
+    transform       : translateX(-85%);
+    display         : flex;
+    align-items     : center;
+    /* cursor          : default; */
+}
+
+.visitantes:hover {
+    animation: mostraretiqueta 1s ease-in-out forwards;
+}
+
+@keyframes mostraretiqueta {
+    from {
+        transform: translateX(-85%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
 .navbar {
     position        : fixed;
     display         : flex;
