@@ -1,0 +1,302 @@
+.custom-container {
+    max-width: 1100px;
+    width    : 100%;
+    margin   : auto;
+}
+
+.custom-navbar {
+    width                  : 100%;
+    position               : fixed;
+    background-color       : transparent;
+    backdrop-filter        : blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom          : 1px solid gray;
+    z-index                : 996;
+}
+
+.custom-navbar .menu-items {
+    display: flex;
+}
+
+.custom-navbar .nav-container li {
+    list-style: none;
+}
+
+.custom-navbar .nav-container a {
+    text-decoration: none;
+    color          : #0e2431;
+    font-weight    : 500;
+    font-size      : 1.2rem;
+    padding        : 0.7rem;
+}
+
+.nav-container {
+    display    : flex;
+    position   : relative;
+    height     : 80px;
+    align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+    .nav-container {
+        display: block;
+    }
+}
+
+.nav-container .checkbox {
+    position: absolute;
+    display : block;
+    height  : 32px;
+    width   : 32px;
+    top     : 20px;
+    right   : 20px;
+    z-index : 5;
+    opacity : 0;
+    cursor  : pointer;
+}
+
+.nav-container .hamburger-lines {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    height         : 26px;
+    width          : 32px;
+    position       : absolute;
+    top            : 25px;
+    right          : 20px;
+    z-index        : 2;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+    display      : block;
+    height       : 4px;
+    width        : 100%;
+    border-radius: 10px;
+    background   : var(--branco);
+}
+
+.nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition      : transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition      : transform 0.4s ease-in-out;
+}
+
+@media screen and (min-width: 992px) {
+    .custom-navbar .menu-items {
+        padding-top   : 10px;
+        display       : flex;
+        flex-direction: row;
+        padding-left  : 350px;
+    }
+
+}
+
+.custom-navbar .menu-items ul {
+    display: flex;
+}
+
+.custom-navbar .menu-items ul li a {
+    color: var(--branco);
+}
+
+@media screen and (max-width: 992px) {
+
+    .custom-navbar .menu-items ul {
+        display        : flex;
+        flex-direction : column;
+        align-items    : center;
+        justify-content: space-between;
+        gap            : 10px;
+    }
+
+    .custom-navbar .menu-items {
+        background-color: var(--preto);
+        height          : 100vh;
+        width           : 100%;
+        transform       : translate(150%);
+        transition      : transform 0.5s ease-in-out;
+        display         : flex;
+        justify-content : center;
+        align-items     : center;
+        z-index         : 1000;
+
+    }
+
+}
+
+.custom-navbar .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size    : 1.5rem;
+    font-weight  : 500;
+}
+
+
+.logo {
+    color         : var(--branco);
+    display       : flex;
+    align-items   : center;
+    position      : relative;
+    align-items   : center;
+    height        : 100%;
+    position      : relative;
+    letter-spacing: 5px;
+    font-size     : 1em;
+}
+
+.logo div:nth-child(2) {
+    font-weight: 500;
+    display    : block;
+    position   : absolute;
+    color      : var(--branco);
+    font-size  : 4em;
+    margin-left: -25px;
+}
+
+.logo div:nth-child(3) {
+    display    : block;
+    position   : absolute;
+    color      : var(--branco);
+    margin-top : 27px;
+    margin-left: 25px;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .logo {
+        margin-left: 50px;
+        font-size  : 1.5em;
+    }
+
+    .logo div:nth-child(2) {
+        font-weight: 500;
+        display    : block;
+        position   : absolute;
+        color      : var(--verde);
+        font-size  : 4.4em;
+        margin-left: -15px;
+    }
+
+    .logo div:nth-child(3) {
+        display    : block;
+        position   : absolute;
+        color      : var(--verde);
+        margin-top : 27px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .nav-container .checkbox {
+        display: none;
+    }
+
+    .nav-container .hamburger-lines {
+        display: none;
+
+    }
+
+}
+
+.nav-container input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(0%);
+}
+
+@media screen and (min-width: 992px) {
+    .nav-container input[type="checkbox"]:checked~.menu-items {
+        transform: translateX(0%);
+    }
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+    transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+    transform: rotate(-45deg);
+}
+
+/* 
+.nav-container input[type="checkbox"]:checked~.logo {
+    display: none;
+} */
+
+
+.menu-items li a {
+    background:
+        linear-gradient(currentColor 0 0) bottom /var(--d, 0) 3px no-repeat;
+    transition: 0.5s;
+}
+
+.menu-items li:hover a {
+    --d: 80%;
+}
+
+.menu-items li a.active {
+    background:
+        linear-gradient(currentColor 0 0) bottom /var(--d, 0) 3px no-repeat;
+
+}
+
+.menu-items li a.active {
+    --d: 80%;
+}
+
+
+.nav-bottom ul {
+    list-style     : none;
+    display        : flex;
+    align-items    : flex-start;
+    justify-content: space-around;
+    flex-direction : column;
+}
+
+@media screen and (max-width: 992px) {
+    .nav-bottom {
+        margin-top: 20px;
+    }
+
+    .nav-bottom ul {
+        align-items   : center;
+        flex-direction: row;
+    }
+}
+
+.nav-bottom ul li a {
+    color          : var(--branco);
+    text-decoration: none;
+    padding        : .2rem;
+    line-height    : 30px;
+    cursor         : pointer;
+}
+
+.nav-bottom ul li a {
+    margin-bottom: 10px;
+    background   :
+        linear-gradient(currentColor 0 0) bottom /var(--d, 0) 3px no-repeat;
+    transition: 0.5s;
+}
+
+.nav-bottom ul li:hover a {
+    --d: 90%;
+}
+
+.nav-bottom ul li a.active {
+    background:
+        linear-gradient(currentColor 0 0) bottom /var(--d, 0) 3px no-repeat;
+}
