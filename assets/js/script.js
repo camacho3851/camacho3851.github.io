@@ -86,14 +86,21 @@ function modalimg(img) {
     modalImg.alt = img.alt;
     captionTexto.innerHTML = img.alt;
     navbar.style.display = "none"
-    
+
     btFechar.onclick = function () {
         navbar.style.display = "block"
         modal.style.display = "none";
     }
-    
+
     modal.onclick = function () {
         modal.style.display = "none";
         navbar.style.display = "block"
     }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            navbar.style.display = "block"
+            modal.style.display = "none";
+        }
+    })
 }
