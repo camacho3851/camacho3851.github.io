@@ -1,15 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 :root {
     /* new */
-    --c1      : #536976;
-    --c2      : #BBD2C5;
-    --c3      : #8798a1;
-    /* --c1   : rgb(119, 65, 65);
-    --c2      : rgb(161, 125, 125);
-    --c3      : rgb(116, 81, 81); */
-    --branco  : #fff;
-    --preto   : #000;
+    /* --c1    : #536976;
+    --c2    : #BBD2C5;
+    --c3    : #8798a1; */
+
+    --c1: #4082fc;
+    --c2: #f9f9f9;
+    --c3: #fff;
+    --c4: #3ecf8e;
+    --c5: #2857ad;
+
+    --branco: #fff;
+    --preto : #1d1d1d;
+
+
+    --gradient1: linear-gradient(90deg, var(--c1) 70%, var(--c1) 30%, #7fa9f7)
 }
 
 * {
@@ -20,6 +27,7 @@
     scrollbar-color   : #6e6e6e60 transparent;
     margin            : 0;
     padding           : 0;
+    font-family       : 'Rubik', sans-serif;
 }
 
 ::-webkit-scrollbar-track {
@@ -54,7 +62,7 @@ body {
 
 .home {
     height         : 100vh;
-    background     : linear-gradient(63.13deg, var(--c1) 51.04%, var(--c2) 51.05%);
+    background     : linear-gradient(168.13deg, var(--c1) 69%, var(--c3) 31%);
     display        : flex;
     align-items    : center;
     flex-wrap      : wrap;
@@ -65,9 +73,9 @@ body {
 
 @media screen and (max-width: 992px) {
     .home {
-        background         : none;
-        background         : linear-gradient(33deg, var(--c1) 51.04%, var(--c2) 51.05%);
-        /* background-color: var(--c1); */
+        background: none;
+        background: linear-gradient(168.13deg, var(--c1) 85%, var(--c3) 15%);
+
     }
 }
 
@@ -117,54 +125,44 @@ body {
 
 }
 
-.button-linkedin {
-    width           : 270px;
-    height          : 50px;
-    background-color: transparent;
-    color           : var(--branco);
-    border          : 1px solid var(--c2);
-    border-radius   : 50px;
-    font-size       : 1em;
-    display         : flex;
-    align-items     : center;
-    justify-content : center;
-    margin-bottom   : 20px;
-}
-
-@media screen and (max-width:992px) {
-    .button-linkedin {
-        width: 100%;
-    }
-}
-
-.button-linkedin:hover {
-    background-color: var(--c2);
-    color           : var(--c1);
-    letter-spacing  : 2px;
-    cursor          : pointer;
-    transition      : all .3s linear;
+.bts {
+    display    : flex;
+    align-items: center;
+    gap        : 20px;
+    flex-wrap  : wrap;
+    margin-top : 20px;
 }
 
 .btn {
-    width           : 270px;
+    width           : 180px;
     height          : 50px;
     background-color: transparent;
     color           : var(--branco);
-    border          : 1px solid var(--c2);
-    border-radius   : 50px;
-    font-size       : 1em;
+    border-radius   : 10px;
+    font-size       : .7em;
     display         : flex;
     align-items     : center;
     justify-content : center;
     margin-bottom   : 20px;
     position        : relative;
     cursor          : pointer;
+    background-color: var(--cor1);
+    color           : var(--cor2);
+    box-shadow      : 5px 5px 8px #00000020;
+    transition      : .5s;
+}
+
+@media screen and (max-width:992px) {
+    .btn {
+        font-size: 1.2em;
+    }
 }
 
 .text {
     display        : flex;
     align-items    : center;
     justify-content: center;
+    letter-spacing : 2px;
 }
 
 .btn-wrapper,
@@ -175,7 +173,7 @@ body {
     width   : 100%;
     height  : 100%;
     left    : 0;
-    color   : #fff;
+    color   : var(--cor2);
 }
 
 .text {
@@ -188,7 +186,7 @@ body {
 }
 
 .icon {
-    color          : #fff;
+    color          : var(--cor2);
     top            : 100%;
     display        : flex;
     align-items    : center;
@@ -197,7 +195,7 @@ body {
 }
 
 .btn:hover {
-    background: var(--c2);
+    transform: scale(1.02);
 }
 
 .btn:hover .text {
@@ -269,7 +267,7 @@ body {
 section {
     padding       : .375rem;
     padding-bottom: 2rem;
-    color         : var(--branco);
+    color         : var(--preto);
 }
 
 .to_top {
@@ -278,7 +276,7 @@ section {
     bottom         : 50px;
     text-decoration: none;
     display        : none;
-    color          : var(--branco);
+    color          : var(--c4);
     z-index        : 999;
 }
 
@@ -412,7 +410,7 @@ section {
 
 
 .skills {
-    background-color: var(--c1);
+    background-color: var(--c2);
 }
 
 .skills .container {
@@ -492,7 +490,7 @@ section {
 }
 
 .projetos {
-    background-color: var(--c1);
+    background-color: var(--c2);
 }
 
 .projetos .container {
@@ -555,6 +553,7 @@ section {
 .card .details h3 {
     font-size  : 1.2em;
     font-weight: 600;
+    color      : var(--branco);
 }
 
 .card .details p {
@@ -562,6 +561,7 @@ section {
     font-size : .7em;
     font-style: italic;
     text-align: center;
+    color     : var(--branco);
 }
 
 @media screen and (max-width: 992px) {
@@ -580,7 +580,7 @@ section {
     margin          : 10px;
     width           : 150px;
     height          : 30px;
-    background-color: var(--c2);
+    background-color: var(--c4);
     display         : flex;
     align-items     : center;
     justify-content : center;
@@ -604,11 +604,12 @@ section {
     justify-content : center;
     border-radius   : 5px;
     text-decoration : none;
-    color           : var(--branco);
+    color           : var(--c4);
 }
 
 .contato {
-    background-color: var(--c3);
+    background-color: var(--c5);
+    color           : var(--c2);
 }
 
 .contato .container {
@@ -634,7 +635,7 @@ section {
     align-items    : center;
     justify-content: flex-start;
     text-decoration: none;
-    color          : var(--branco);
+    color          : var(--c2);
     gap            : 10px;
     position       : relative;
     width          : 130px;
@@ -667,7 +668,7 @@ section {
     width           : 5px;
     height          : 5px;
     display         : flex;
-    background-color: var(--branco);
+    background-color: var(--c2);
     border-radius   : 50%;
 }
 
@@ -696,16 +697,10 @@ section {
 
 }
 
-.contato .container .form {
-    display       : flex;
-    align-items   : center;
-    flex-direction: column;
-}
-
 .ponto {
     width           : 10px;
     height          : 10px;
-    background-color: var(--branco);
+    background-color: var(--c2);
     border-radius   : 50px;
     margin-left     : var(--ml);
     margin-right    : var(--mr);
@@ -714,10 +709,11 @@ section {
 }
 
 .rodape {
-    background-color: var(--c3);
+    background-color: var(--c5);
     display         : flex;
     align-items     : center;
     justify-content : center;
     padding         : 10px;
     font-size       : 1em;
+    color           : var(--c2);
 }
