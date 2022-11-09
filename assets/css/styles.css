@@ -683,7 +683,7 @@ section {
     }
 
     .contato .container .redes-sociais {
-        flex-direction: row;
+        flex-direction: row; 
     }
 
     .contato .container .redes-sociais .icone {

@@ -10,9 +10,9 @@ sr.reveal('.vem-direita-noreset', { duration: 3000, origin: 'right', reset: fals
 sr.reveal('.vem-cima-noreset', { duration: 3000, origin: 'top', reset: false })
 sr.reveal('.vem-baixo-noreset', { duration: 3000, origin: 'bottom', reset: false })
 
-function resolucao() {
+function resolucao() { 
     larguraTela = screen.width
-
+   
     if (larguraTela == 1920) {
         document.body.style.fontSize = '18px'
     } else if (larguraTela == 1680) {
