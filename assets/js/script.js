@@ -34,7 +34,7 @@ function resolucao() {
     } else if (larguraTela == 1024) {
         document.body.style.fontSize = '9px'
     } else if (larguraTela <= 992) {
-        document.body.style.fontSize = '10px'
+        document.body.style.fontSize = '9px'
     } else {
         document.body.style.fontSize = '14px'
     }
