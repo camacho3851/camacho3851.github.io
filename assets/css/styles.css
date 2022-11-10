@@ -280,6 +280,50 @@ section {
     z-index        : 999;
 }
 
+.acessos {
+    min-width       : 160px;
+    height          : 40px;
+    position        : fixed;
+    left            : 0;
+    top             : 20%;
+    background-color: var(--c4);
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+    border-radius   : 0px 8px 8px 0px;
+    padding         : 10px;
+    transform       : translateX(-75%);
+    gap             : 20px;
+    z-index         : 995;
+    animation       : treme 2s infinite;
+    transition      : .5s;
+}
+
+.acessos:hover {
+    box-shadow   : 2px 2px 15px #377257;
+    /* box-shadow: 0px 0px 0px 7px #ffffff20; */
+    transform    : translateX(0);
+    animation    : none;
+}
+
+@media screen and (max-width: 992px) {
+    .acessos div {
+        font-size: 1.4em;
+    }
+
+}
+
+@keyframes treme {
+    0% {
+        box-shadow: none;
+    }
+
+    50% {
+        box-shadow: 0px 0px 0px 7px #3ecf8e70;
+    }
+
+}
+
 
 .sec-titulo {
     font-size      : 2em;
@@ -487,6 +531,11 @@ section {
     max-width    : 25rem;
     max-height   : 15rem;
     cursor       : pointer;
+    transition   : .3s;
+}
+
+.certificados .container .certificado:hover img {
+    transform: scale(1.1);
 }
 
 .projetos {
@@ -613,12 +662,12 @@ section {
 }
 
 .contato .container {
-    display        : flex;
-    align-content  : center;
-    justify-content: space-around;
-    flex-wrap      : wrap;
-    margin-top     : 50px;
-    gap            : 40px;
+    display           : flex;
+    align-content     : center;
+    justify-content   : space-around;
+    flex-wrap         : wrap;
+    margin-top        : 50px;
+    /* gap            : 40px; */
 }
 
 
@@ -631,6 +680,7 @@ section {
 
 
 .contato .container .redes-sociais .icone {
+    flex           : 1 1 40px;
     display        : flex;
     align-items    : center;
     justify-content: flex-start;
@@ -641,11 +691,6 @@ section {
     width          : 130px;
 }
 
-@media screen and (min-width:992px) {
-    .contato .container .redes-sociais {
-        gap: 20px;
-    }
-}
 
 .contato .container .redes-sociais .icone .url {
     position   : absolute;
@@ -683,7 +728,7 @@ section {
     }
 
     .contato .container .redes-sociais {
-        flex-direction: row; 
+        flex-direction: row;
     }
 
     .contato .container .redes-sociais .icone {
