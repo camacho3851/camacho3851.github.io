@@ -787,20 +787,9 @@
                 dataType: "json",
                 url: 'https://apirestportfolio.herokuapp.com/access',
                 success: function (resp) {
-                    $.ajax({
-                        type: "GET",
-                        dataType: "json",
-                        url: 'https://apirestportfolio.herokuapp.com/access',
-                        success: function (resp) {
-                            console.log(resp)
-                            $("#visitante").html(resp.acessos)
-                        }
-                    });
+                    $("#visitante").html(resp.acessos)
                 }
             });
-
-
-
         })
 
         var scroll = new SmoothScroll('a[href*="#"]', {
