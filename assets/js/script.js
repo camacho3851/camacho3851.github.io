@@ -24,15 +24,15 @@ function resolucao() {
     } else if (larguraTela == 1400) {
         document.body.style.fontSize = '10px'
     } else if (larguraTela == 1366) {
-        document.body.style.fontSize = '8px'
+        document.body.style.fontSize = '10px'
     } else if (larguraTela == 1360) {
-        document.body.style.fontSize = '8px'
+        document.body.style.fontSize = '10px'
     } else if (larguraTela == 1280) {
-        document.body.style.fontSize = '9px'
+        document.body.style.fontSize = '10px'
     } else if (larguraTela == 1152) {
-        document.body.style.fontSize = '9px'
+        document.body.style.fontSize = '10px'
     } else if (larguraTela == 1024) {
-        document.body.style.fontSize = '9px'
+        document.body.style.fontSize = '10px'
     } else if (larguraTela <= 992) {
         document.body.style.fontSize = '9px'
     } else {
