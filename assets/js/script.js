@@ -16,23 +16,23 @@ function resolucao() {
     if (larguraTela == 1920) {
         document.body.style.fontSize = '18px'
     } else if (larguraTela == 1680) {
-        document.body.style.fontSize = '14px'
+        document.body.style.fontSize = '12px'
     } else if (larguraTela == 1600) {
-        document.body.style.fontSize = '14px'
+        document.body.style.fontSize = '12px'
     } else if (larguraTela == 1440) {
-        document.body.style.fontSize = '14px'
+        document.body.style.fontSize = '12px'
     } else if (larguraTela == 1400) {
-        document.body.style.fontSize = '14px'
+        document.body.style.fontSize = '12px'
     } else if (larguraTela == 1366) {
-        document.body.style.fontSize = '14px'
+        document.body.style.fontSize = '12px'
     } else if (larguraTela == 1360) {
-        document.body.style.fontSize = '14px'
+        document.body.style.fontSize = '12px'
     } else if (larguraTela == 1280) {
-        document.body.style.fontSize = '14px'
+        document.body.style.fontSize = '12px'
     } else if (larguraTela == 1152) {
-        document.body.style.fontSize = '14px'
+        document.body.style.fontSize = '12px'
     } else if (larguraTela == 1024) {
-        document.body.style.fontSize = '14px'
+        document.body.style.fontSize = '12px'
     } else if (larguraTela <= 992) {
         document.body.style.fontSize = '9px'
     } else {
