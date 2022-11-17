@@ -23,7 +23,7 @@
 <body>
 
     <a href="#" class="to_top">
-        <svg width="50" height="50" fill="currentColor" viewBox="0 0 16 16">
+        <svg width="45" height="45" fill="currentColor" viewBox="0 0 16 16">
             <path fill-rule="evenodd"
                 d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z" />
         </svg>
@@ -65,12 +65,28 @@
                     </div>
                     <div class="menu-items">
                         <ul>
-                            <li><a href="#">Inicio</a></li>
-                            <li><a href="#about_me">Sobre mim</a></li>
-                            <li><a href="#skills">Habilidades</a></li>
-                            <li><a href="#certificados">Certificados</a></li>
-                            <li><a href="#projetos">Projetos</a></li>
-                            <li><a href="#contato">Contato</a></li>
+                            <li><a class="nav-item" href="#">Inicio</a></li>
+                            <li><a class="nav-item" href="#about_me">Sobre mim</a></li>
+                            <li><a class="nav-item" href="#skills">Habilidades</a></li>
+                            <li><a class="nav-item" href="#certificados">Certificados</a></li>
+                            <li><a class="nav-item" href="#projetos">Projetos</a></li>
+                            <li><a class="nav-item" href="#contato">Contato</a></li>
+                            <li>
+                                <a class="menu-btn" style="--cor1:var(--c4); --cor2:var(--branco)"
+                                    href="./assets/docs/CV_Mateus.pdf" download>
+                                    <div class="btn-wrapper">
+                                        <div class="text">Download CV</div>
+                                        <span class="icon">
+                                            <svg width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                                <path
+                                                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -785,7 +801,7 @@
             $.ajax({
                 type: "PUT",
                 dataType: "json",
-                url: 'https://apirestportfolio.herokuapp.com/access',
+                // url: 'https://apirestportfolio.herokuapp.com/access',
                 success: function (resp) {
                     $("#visitante").html(resp.acessos)
                 }

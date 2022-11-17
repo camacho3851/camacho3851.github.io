@@ -1,19 +1,28 @@
 .custom-container {
-    max-width: 1100px;
+    max-width: 1200px;
     width    : 100%;
     margin   : auto;
 }
 
 .custom-navbar {
-    width                  : 100%;
-    position               : fixed;
-    background-color       : transparent;
-    z-index                : 996;
-    transition: all .5s ease;
+    width           : 100%;
+    position        : fixed;
+    background-color: transparent;
+    z-index         : 996;
+    transition      : all .5s ease;
 }
 
 .custom-navbar .menu-items {
-    display: flex;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-around;
+    width          : 100%;
+
+}
+
+.custom-navbar .menu-items ul {
+    display    : flex;
+    align-items: center;
 }
 
 .custom-navbar .nav-container li {
@@ -92,10 +101,10 @@
 
 @media screen and (min-width: 992px) {
     .custom-navbar .menu-items {
-        padding-top   : 10px;
-        display       : flex;
-        flex-direction: row;
-        padding-left  : 350px;
+        padding-top      : 10px;
+        display          : flex;
+        flex-direction   : row;
+        /* padding-left  : 250px; */
     }
 
 }
@@ -235,23 +244,23 @@
 } */
 
 
-.menu-items li a {
+.menu-items li a.nav-item {
     background:
         linear-gradient(currentColor 0 0) bottom /var(--d, 0) 3px no-repeat;
     transition: 0.5s;
 }
 
-.menu-items li:hover a {
+.menu-items li:hover a.nav-item {
     --d: 80%;
 }
 
-.menu-items li a.active {
+.menu-items li a.nav-item.active {
     background:
         linear-gradient(currentColor 0 0) bottom /var(--d, 0) 3px no-repeat;
 
 }
 
-.menu-items li a.active {
+.menu-items li a.nav-item.active {
     --d: 80%;
 }
 
@@ -275,7 +284,7 @@
     }
 }
 
-.nav-bottom ul li a {
+.nav-bottom ul li a.nav-item {
     color          : var(--c2);
     text-decoration: none;
     padding        : .2rem;
@@ -283,18 +292,18 @@
     cursor         : pointer;
 }
 
-.nav-bottom ul li a {
+.nav-bottom ul li a.nav-item {
     margin-bottom: 10px;
     background   :
         linear-gradient(currentColor 0 0) bottom /var(--d, 0) 3px no-repeat;
     transition: 0.5s;
 }
 
-.nav-bottom ul li:hover a {
+.nav-bottom ul li:hover a.nav-item {
     --d: 90%;
 }
 
-.nav-bottom ul li a.active {
+.nav-bottom ul li a.nav-item.active {
     background:
         linear-gradient(currentColor 0 0) bottom /var(--d, 0) 3px no-repeat;
 }
