@@ -16,8 +16,6 @@
 
     <script src="plugins/scrollreveal-4.0.9/scrollreveal.js"></script>
     <link rel="stylesheet" href="plugins/jquery-toast/style.css">
-
-
 </head>
 
 <body>
@@ -94,6 +92,7 @@
         </nav>
 
         <section class="container-fluid home">
+            <canvas class="canvas-home"></canvas>
             <div class="ajuste-altura ">
                 <div class="centralizador">
                     <div class="organizador">
@@ -139,7 +138,6 @@
 
 
         <section class="about_me" id="about_me">
-
             <div class="container">
                 <div class="desenho2 vem-esquerda">
                     <img src="assets/imagens/webp/semfundo.webp" alt="Caricatura" srcset="">
@@ -638,6 +636,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -729,10 +728,36 @@
     <script src="plugins/smooth-scroll-master/dist/smooth-scroll.min.js"></script>
     <script src="plugins/smooth-scroll-master/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="plugins/jquery-toast/script.js"></script>
+    <script src="plugins/particles.js-master/dist/particles.min.js"></script>
 
 
 
     <script>
+
+        window.onload = function () {
+            Particles.init({
+                selector: '.canvas-home',
+                maxParticles: 200,
+                color: "#ffffff",
+                connectParticles: true,
+                responsive: [{
+                    breakpoint: 992,
+                    options: {
+                        maxParticles: 90
+                    }
+                }, {
+                    breakpoint: 800,
+                    options: {
+                        maxParticles: 80
+                    }
+                }, {
+                    breakpoint: 600,
+                    options: {
+                        maxParticles: 60
+                    }
+                }]
+            });
+        };
 
         function getAge() {
 
@@ -801,7 +826,7 @@
             $.ajax({
                 type: "PUT",
                 dataType: "json",
-                url: 'https://apirestportfolio.herokuapp.com/access',
+                // url: 'https://apirestportfolio.herokuapp.com/access',
                 success: function (resp) {
                     $("#visitante").html(resp.acessos)
                 }

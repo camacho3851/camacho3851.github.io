@@ -7,6 +7,7 @@
     --c3    : #8798a1; */
 
     --c1: #4082fc;
+    /* --c1: #dbcece; */
     --c2: #f9f9f9;
     --c3: #fff;
     --c4: #3ecf8e;
@@ -61,15 +62,17 @@ body {
 }
 
 .home {
-    height         : 100vh;
+    height            : 100vh;
     background     : linear-gradient(168.13deg, var(--c1) 69%, var(--c3) 31%);
-    display        : flex;
-    align-items    : center;
-    flex-wrap      : wrap;
-    justify-content: space-around;
-    gap            : 200px;
-    color          : var(--branco);
+    /* background-color  : var(--c1); */
+    display           : flex;
+    align-items       : center;
+    flex-wrap         : wrap;
+    justify-content   : space-around;
+    gap               : 200px;
+    color             : var(--branco);
 }
+
 
 @media screen and (max-width: 992px) {
     .home {
@@ -78,6 +81,7 @@ body {
 
     }
 }
+
 
 .ajuste-altura {
     width: 100%;
@@ -793,4 +797,12 @@ section {
     padding         : 10px;
     font-size       : 1em;
     color           : var(--c2);
+}
+
+.canvas-home {
+    position: absolute;
+    top     : 0;
+    left    : 0;
+    width   : 100vw;
+    height  : 100vh;
 }
