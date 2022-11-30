@@ -6,7 +6,7 @@
     --c2    : #BBD2C5;
     --c3    : #8798a1; */
 
-    --c1: #4082fc;
+    --c1: #4b4641;
     /* --c1: #dbcece; */
     --c2: #f9f9f9;
     --c3: #fff;
@@ -17,7 +17,7 @@
     --preto : #1d1d1d;
 
 
-    --gradient1: linear-gradient(90deg, var(--c1) 70%, var(--c1) 30%, #7fa9f7)
+    --gradient1: linear-gradient(90deg, var(--c1) 80%, var(--c1) 20%, #7fa9f7)
 }
 
 * {
@@ -63,7 +63,7 @@ body {
 
 .home {
     height            : 100vh;
-    background     : linear-gradient(168.13deg, var(--c1) 69%, var(--c3) 31%);
+    background     : linear-gradient(168.13deg, var(--c1) 70%, var(--c3) 30%);
     /* background-color  : var(--c1); */
     display           : flex;
     align-items       : center;
@@ -693,7 +693,7 @@ section {
 }
 
 .contato {
-    background-color: var(--c5);
+    background-color: var(--c1);
     color           : var(--c2);
 }
 
@@ -790,7 +790,7 @@ section {
 }
 
 .rodape {
-    background-color: var(--c5);
+    background-color: var(--c1);
     display         : flex;
     align-items     : center;
     justify-content : center;
