@@ -6,12 +6,12 @@
     --c2    : #BBD2C5;
     --c3    : #8798a1; */
 
-    --c1: #4b4641;
+    --c1   : #4b4641;
     /* --c1: #dbcece; */
-    --c2: #f9f9f9;
-    --c3: #fff;
-    --c4: #3ecf8e;
-    --c5: #2857ad;
+    --c2   : #f9f9f9;
+    --c3   : #fff;
+    --c4   : #3ecf8e;
+    --c5   : #2857ad;
 
     --branco: #fff;
     --preto : #1d1d1d;
@@ -62,15 +62,15 @@ body {
 }
 
 .home {
-    height            : 100vh;
-    background     : linear-gradient(168.13deg, var(--c1) 70%, var(--c3) 30%);
+    height               : 100vh;
+    background           : linear-gradient(168.13deg, var(--c1) 70%, var(--c3) 30%);
     /* background-color  : var(--c1); */
-    display           : flex;
-    align-items       : center;
-    flex-wrap         : wrap;
-    justify-content   : space-around;
-    gap               : 200px;
-    color             : var(--branco);
+    display              : flex;
+    align-items          : center;
+    flex-wrap            : wrap;
+    justify-content      : space-around;
+    gap                  : 200px;
+    color                : var(--branco);
 }
 
 
@@ -115,7 +115,7 @@ body {
 }
 
 .apresentacao .hello-world {
-    color: var(--c4);
+    color      : var(--c4);
     font-weight: 100;
 }
 
@@ -135,11 +135,17 @@ body {
 }
 
 .bts {
-    display    : flex;
-    align-items: center;
-    gap        : 10px;
-    flex-wrap  : wrap;
-    margin-top : 20px;
+    margin-top: 20px;
+    display            : flex;
+    align-items        : center;
+    justify-content    : flex-start;
+}
+
+@media screen and (max-width: 992px) {
+
+    .bts {
+        justify-content    : center;
+    }
 }
 
 .btn {
@@ -159,13 +165,14 @@ body {
     color           : var(--cor2);
     box-shadow      : 5px 5px 8px #00000020;
     transition      : .5s;
-    box-shadow: 0px 15px 5px #00000060;
+    box-shadow      : 0px 15px 5px #00000060;
 }
 
 .btn:active {
-    transition      : .2s;
-    transform: scale(0.950);
+    transition: .2s;
+    transform : scale(0.950);
 }
+
 .menu-btn {
     width              : 180px;
     height             : 40px;
@@ -204,7 +211,7 @@ body {
     align-items    : center;
     justify-content: center;
     letter-spacing : 2px;
-    font-weight: 500;
+    font-weight    : 500;
 }
 
 .btn-wrapper,
