@@ -36,7 +36,7 @@
 }
 
 ::-webkit-scrollbar {
-    width     : 5px;
+    width     : 8px;
     background: transparent;
 }
 
@@ -62,15 +62,15 @@ body {
 }
 
 .home {
-    height               : 100vh;
-    background           : linear-gradient(168.13deg, var(--c1) 70%, var(--c3) 30%);
-    /* background-color  : var(--c1); */
-    display              : flex;
-    align-items          : center;
-    flex-wrap            : wrap;
-    justify-content      : space-around;
-    gap                  : 200px;
-    color                : var(--branco);
+    height                  : 100vh;
+    /* background           : linear-gradient(168.13deg, var(--c1) 70%, var(--c3) 30%); */
+    /* background-color     : var(--c1); */
+    display                 : flex;
+    align-items             : center;
+    flex-wrap               : wrap;
+    justify-content         : space-around;
+    gap                     : 200px;
+    color                   : var(--branco);
 }
 
 
@@ -79,6 +79,37 @@ body {
         background: none;
         background: linear-gradient(168.13deg, var(--c1) 85%, var(--c3) 15%);
 
+    }
+}
+
+
+.particles {
+    background-color: var(--c1);
+    position        : absolute;
+    width           : 100vw;
+    margin          : 0 !important;
+    padding         : 0 !important;
+    height          : 100vh;
+    top             : 0px;
+    left            : 0;
+    /* Aplica a rotação */
+}
+
+.particles::after {
+    content               : '';
+    height                : 50%;
+    position              : absolute;
+    top                   : 100%;
+    transform-origin      : left;
+    transform             : skewY(-11.8deg);
+    width                 : 100%;
+    background-color      : var(--branco);
+    /* background-color   : black; */
+}
+
+@media screen {
+    .particles::after {
+        top: 93.5%;
     }
 }
 
@@ -120,10 +151,11 @@ body {
 .apresentacao .hello-world {
     color      : var(--c4);
     font-weight: 100;
+    font-size: 1.8em;
 }
 
 .apresentacao div:nth-child(2) {
-    font-size: 1.3em
+    font-size: 1.6em
 }
 
 @media screen and (max-width: 992px) {
@@ -138,16 +170,16 @@ body {
 }
 
 .bts {
-    margin-top: 20px;
-    display            : flex;
-    align-items        : center;
-    justify-content    : flex-start;
+    margin-top     : 20px;
+    display        : flex;
+    align-items    : center;
+    justify-content: flex-start;
 }
 
 @media screen and (max-width: 992px) {
 
     .bts {
-        justify-content    : center;
+        justify-content: center;
     }
 }
 
@@ -167,7 +199,7 @@ body {
     background-color: var(--cor1);
     color           : var(--cor2);
     transition      : .5s;
-    box-shadow      : 5px 10px 20px #00000060; 
+    box-shadow      : 5px 10px 20px #00000060;
 }
 
 .btn:active {
