@@ -151,7 +151,7 @@ body {
 .apresentacao .hello-world {
     color      : var(--c4);
     font-weight: 100;
-    font-size: 1.8em;
+    font-size  : 1.8em;
 }
 
 .apresentacao div:nth-child(2) {
@@ -399,11 +399,15 @@ section {
 
 @keyframes treme {
     0% {
-        box-shadow: none;
+        box-shadow: 0px 0px 0px 0px #3ecf8e70;
     }
 
     50% {
         box-shadow: 0px 0px 0px 7px #3ecf8e70;
+    }
+
+    100% {
+        box-shadow: 0px 0px 0px 0px #3ecf8e70;
     }
 
 }
