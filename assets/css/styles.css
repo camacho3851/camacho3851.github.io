@@ -578,12 +578,17 @@ section {
 }
 
 @media screen and (max-width: 992px) {
+    .skills .container {
+        padding-left : 50px;
+        padding-right: 50px;
+    }
+
     .skills .container .habilidades-box {
         grid-template-columns: 1fr;
     }
 
     .skills .container .habilidades-box .hab {
-        max-width: calc(100% - 100px);
+        max-width: calc(100% - 120px);
         margin   : 0 auto;
     }
 }
