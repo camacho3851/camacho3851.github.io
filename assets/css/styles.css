@@ -99,15 +99,15 @@ body {
     content               : '';
     height                : 50%;
     position              : absolute;
-    top                   : 100%;
     transform-origin      : left;
-    transform             : skewY(-11.8deg);
+    transform             : skewY(-10deg);
     width                 : 100%;
     background-color      : var(--branco);
+    top                   : 100%;
     /* background-color   : black; */
 }
 
-@media screen {
+@media screen and (max-width:992px) {
     .particles::after {
         top: 93.5%;
     }
@@ -699,6 +699,8 @@ section {
     cursor          : pointer;
     border-radius   : 10px;
     background-color: red;
+    box-shadow      : 0 3px 10px 0 rgba(75, 75, 75, 0.1), 0 6px 6px 0 rgba(83, 83, 83, 0.19);
+    transition      : .5s;
 }
 
 .card img {
