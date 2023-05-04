@@ -1055,7 +1055,7 @@
 
         $(document).ready(() => {
             var typed = new Typed('#slogan', {
-                strings: ['Desenvolvedor de Web.'],
+                strings: ['Desenvolvedor Web.'],
                 typeSpeed: 90,
                 startDelay: 1000,
                 backSpeed: 70,
@@ -1069,7 +1069,7 @@
             $.ajax({
                 type: "PUT",
                 dataType: "json",
-                url: 'https://apirestportfolio.vercel.app/accesss',
+                url: 'https://apirestportfolio.vercel.app/access',
                 success: function (resp) {
                     $("#visitante").html(resp.acessos)
                 }
