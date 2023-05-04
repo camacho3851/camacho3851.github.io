@@ -741,6 +741,18 @@
             <div class="container">
                 <div class="projetos-box">
                     <div class="card vem-esquerda">
+                        <img src="assets/imagens/webp/getColor.webp" alt="" srcset="">
+                        <div class="details">
+                            <h3>GetColor</h3>
+                            <p>Projeto realizado para treinar.</p>
+                            <p>HTML5, CSS3, Javascript</p>
+                            <a href="https://mateuscamaccho.github.io/getColor/" target="_blank"
+                                class="deploy-btn">Deploy</a>
+                            <a href="https://github.com/mateuscamaccho/getColor" target="_blank"
+                                class="code-btn">Código</a>
+                        </div>
+                    </div>
+                    <div class="card vem-esquerda">
                         <img src="assets/imagens/webp/fakejsonresponse.webp" alt="" srcset="">
                         <div class="details">
                             <h3>Fake Json Resposne</h3>
@@ -1057,7 +1069,7 @@
             $.ajax({
                 type: "PUT",
                 dataType: "json",
-                url: 'https://apirestportfolio.vercel.app/access',
+                url: 'https://apirestportfolio.vercel.app/accesss',
                 success: function (resp) {
                     $("#visitante").html(resp.acessos)
                 }
