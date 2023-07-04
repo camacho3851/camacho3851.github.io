@@ -101,9 +101,9 @@
 
 @media screen and (min-width: 992px) {
     .custom-navbar .menu-items {
-        padding-top      : 10px;
-        display          : flex;
-        flex-direction   : row;
+        padding-top   : 10px;
+        display       : flex;
+        flex-direction: row;
     }
 
 }
@@ -151,59 +151,22 @@
 
 
 .logo {
-    color         : var(--branco);
     display       : flex;
     align-items   : center;
     position      : relative;
     align-items   : center;
-    height        : 100%;
-    position      : relative;
     letter-spacing: 5px;
-    font-size     : 1em;
+    position      : relative;
+    padding       : 5px;
+
 }
 
-.logo div:nth-child(2) {
-    font-weight: 500;
-    display    : block;
-    position   : absolute;
-    color      : var(--branco);
-    font-size  : 4em;
-    margin-left: -25px;
-}
-
-.logo div:nth-child(3) {
-    display    : block;
-    position   : absolute;
-    color      : var(--branco);
-    margin-top : 27px;
-    margin-left: 25px;
+.logo img {
+    width    : 100%;
+    max-width: 150px;
 }
 
 
-
-@media screen and (max-width: 992px) {
-    .logo {
-        margin-left: 50px;
-        font-size  : 1.5em;
-    }
-
-    .logo div:nth-child(2) {
-        font-weight: 500;
-        display    : block;
-        position   : absolute;
-        color      : var(--verde);
-        font-size  : 4.4em;
-        margin-left: -15px;
-    }
-
-    .logo div:nth-child(3) {
-        display    : block;
-        position   : absolute;
-        color      : var(--verde);
-        margin-top : 27px;
-        margin-left: 30px;
-    }
-}
 
 @media screen and (min-width: 992px) {
     .nav-container .checkbox {
