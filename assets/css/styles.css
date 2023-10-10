@@ -527,6 +527,7 @@ section {
 @media screen and (max-width: 992px) {
     .about_me .container .descricao {
         align-items: center;
+        padding: 0 15px;
     }
 
     .about_me .container .desenho2 img {
