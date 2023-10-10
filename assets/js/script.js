@@ -1,14 +1,14 @@
 window.sr = ScrollReveal();
-ScrollReveal({ distance: '50px' });
-sr.reveal('.vem-esquerda', { duration: 1500, origin: 'left', reset: false })
-sr.reveal('.vem-direita', { duration: 1500, origin: 'right', reset: false })
-sr.reveal('.vem-cima', { duration: 1500, origin: 'top', reset: false })
-sr.reveal('.vem-baixo', { duration: 1500, origin: 'bottom', reset: false })
+ScrollReveal({ distance: '30px' });
+sr.reveal('.vem-esquerda', { duration: 1700, origin: 'left', reset: false })
+sr.reveal('.vem-direita', { duration: 1700, origin: 'right', reset: false })
+sr.reveal('.vem-cima', { duration: 1700, origin: 'top', reset: false })
+sr.reveal('.vem-baixo', { duration: 1700, origin: 'bottom', reset: false })
 
-sr.reveal('.vem-esquerda-noreset', { duration: 1500, origin: 'left', reset: false })
-sr.reveal('.vem-direita-noreset', { duration: 1500, origin: 'right', reset: false })
-sr.reveal('.vem-cima-noreset', { duration: 1500, origin: 'top', reset: false })
-sr.reveal('.vem-baixo-noreset', { duration: 1500, origin: 'bottom', reset: false })
+sr.reveal('.vem-esquerda-noreset', { duration: 1700, origin: 'left', reset: false })
+sr.reveal('.vem-direita-noreset', { duration: 1700, origin: 'right', reset: false })
+sr.reveal('.vem-cima-noreset', { duration: 1700, origin: 'top', reset: false })
+sr.reveal('.vem-baixo-noreset', { duration: 1700, origin: 'bottom', reset: false })
 
 function resolucao() { 
     larguraTela = screen.width
