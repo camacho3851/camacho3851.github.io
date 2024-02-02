@@ -572,7 +572,7 @@ section {
     gap             : 20px;
     background-color: #fff;
     width           : 400px;
-    height          : 200px;
+    height          : 240px;
     border-radius   : 10px;
     box-shadow      : 0 3px 3px 0 rgba(145, 145, 145, 0.1), 0 6px 6px 0 rgba(163, 162, 162, 0.19);
     transition      : .4s;
